@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetor</title>
+</head>
+<body>
+<script>
+    let numeros = [];
+    let pares = 0;
+
+    for (let i = 0; i < 5; i++) {
+        numeros[i] = parseInt(prompt(`Digite 5s número inteiro`));
+
+        if (numeros[i] % 2 === 0) { 
+            pares++;
+        }
+    }
+
+    console.log("Quantidade de números pares: " + pares);
+</script>
+</body>
+</html>

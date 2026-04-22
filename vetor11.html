@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetor</title>
+</head>
+<body>
+     <script>
+        let positivo = 0;
+        let negativo = 0;
+        let meuVetor = [];
+        let soma1 = 0
+        let soma2=0
+        for (let i = 0; i <= 9; i++) {
+            meuVetor[i] = parseInt(prompt("Digite 10 numeros inteiros: "));
+            if (meuVetor[i] > 0) {
+                positivo++;
+                soma1 +=meuVetor[i]
+            } else if (meuVetor[i] < 0) {
+                negativo++;
+                soma2 += meuVetor[i]
+            }
+            
+        }
+        console.log("Os numeros positivos são: " + positivo);
+        console.log("Os numeros negativos são: " + negativo);
+        console.log("soma  dos numeros positivos " + soma1)
+        console.log("soma dos numeros negativo"+soma2)
+        
+
+    </script>
+    
+</body>
+</html>
